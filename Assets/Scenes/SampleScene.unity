@@ -1309,6 +1309,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8817433689562153739, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
   m_PrefabInstance: {fileID: 8817433688525511897}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1137319901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970356453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d450e9bacde4029970f367b23419c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jump:
+    Guid:
+      Data1: -527250788
+      Data2: 1083228212
+      Data3: -414334019
+      Data4: 422733737
+    Path: event:/Jump
 --- !u!4 &1159189911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5839186219064341626, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
@@ -2594,6 +2613,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: PlayEvent
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: TriggerOnce
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Land
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: AllowNonRigidbodyDoppler
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1003696788
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1099900448
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1227559348
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137319912, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -364623375
+      objectReference: {fileID: 0}
     - target: {fileID: 8817433689562153739, guid: b28dc946b4e174deca6b0082b7ec273c, type: 3}
       propertyPath: m_RootOrder
       value: 4

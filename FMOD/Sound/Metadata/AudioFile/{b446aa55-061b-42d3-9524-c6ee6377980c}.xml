@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{b446aa55-061b-42d3-9524-c6ee6377980c}">
+		<property name="assetPath">
+			<value>Impact_V2 37-wet_sounds_slime_porn_fuck_light_short_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.3593877551020408</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{990c9b57-7c7b-482e-ad79-a30f7ff6975d}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{80fccf1f-f946-4c98-a178-37ed7067abd4}">
+		<property name="assetPath">
+			<value>jump_v1 49-wet_sounds_slime_porn_fuck_light_short_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.26564625850340134</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{990c9b57-7c7b-482e-ad79-a30f7ff6975d}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     float slideRemember;
     bool jumpEnabled;
     public bool isFloating;
+    public bool jumpSound;
     [SerializeField] LayerMask ground;
     [SerializeField] LayerMask wallLayer;
     [SerializeField] LayerMask ceilingLayer;
@@ -113,9 +114,12 @@ public class Movement : MonoBehaviour
         slideRemember -= Time.deltaTime;
         if(GameManager.alive){
         //Jumping
-        if(jumpPress){
+        if(jPressRemember > 0){
             PlayerJump();
             rb.gravityScale = 10;
+        }
+        if(jumpPress){
+            jumpEnabled = true;
             jPressRemember = 0.1f;
         }
         // if jumping is released set the upwards velocity to 0 
@@ -167,8 +171,10 @@ public class Movement : MonoBehaviour
     }
 
     void PlayerJump(){
-        if(isGrounded() || !isGrounded() && slideRemember > 0f){
+        if(isGrounded() && jumpEnabled || !isGrounded() && slideRemember > 0f && jumpEnabled){
             rb.AddForce(new Vector2(0, jumpPower), ForceMode2D.Impulse);
+            jumpEnabled = false;
+            
         }
     }
 
