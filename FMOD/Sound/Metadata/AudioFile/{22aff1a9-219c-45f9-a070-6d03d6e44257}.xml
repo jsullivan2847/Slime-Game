@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{22aff1a9-219c-45f9-a070-6d03d6e44257}">
+		<property name="assetPath">
+			<value>land_v3_v2 30-wet_sounds_slime_porn_fuck_light_short_1(2).wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.36718820861678003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{990c9b57-7c7b-482e-ad79-a30f7ff6975d}</destination>
+		</relationship>
+	</object>
+</objects>

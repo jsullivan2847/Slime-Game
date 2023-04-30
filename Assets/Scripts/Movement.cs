@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float maxSpeed;
     [SerializeField] float wallCheckRadius;
     [SerializeField] float ceilingCheckRadius;
+    [SerializeField] bool gizmos;
 
     public Timer Timer;
     
@@ -185,6 +186,7 @@ public class Movement : MonoBehaviour
         if(velocity < 0f){
             velocity = velocity * -1;
         }
+
         if(isGrounded() || !isGrounded() && PlayerTouchingCeiling()){
             if(velocity <= maxSpeed){
             rb.AddForce(new Vector2(horizontal * acceleration, 0f),ForceMode2D.Impulse);
@@ -192,9 +194,11 @@ public class Movement : MonoBehaviour
         }
         //if player is in the air they move slower
         else{
-            rb.AddForce(new Vector2((horizontal) / 3, 0f),ForceMode2D.Impulse);
+            //Debug.Log("player moving in air");
+            rb.AddForce(new Vector2((horizontal) * 0.1f, 0f),ForceMode2D.Impulse);
         }
     }
+
     void pushPlayerDown(){
         if(!PlayerTouchingCeiling()){
             rb.AddForce(new Vector2(rb.velocity.x, fallSpeed));
@@ -217,6 +221,7 @@ public class Movement : MonoBehaviour
 
     void OnDrawGizmos()
 {
+    if(gizmos){
     slimeCollider = transform.GetComponent<Collider2D>();
     Gizmos.color = Color.red;
     Vector2 position = slimeCollider.bounds.center;
@@ -226,6 +231,7 @@ public class Movement : MonoBehaviour
     //Gizmos.DrawSphere(wallCheckOrigin.position,wallCheckRadius);
     Gizmos.DrawCube(position,size);
     //RaycastHit2D hit = Physics2D.BoxCast(position,size,0f,Vector2.down, 1f,ground);
+    }
 }
 
 }

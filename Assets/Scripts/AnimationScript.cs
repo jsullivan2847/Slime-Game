@@ -70,11 +70,11 @@ public class AnimationScript : MonoBehaviour
 
     void FloatAnimation(){
         if(Movement.isFloating && !Movement.isGrounded() && !Movement.isSliding()){
-            Debug.Log("animation is floating");
+            //Debug.Log("animation is floating");
             animator.SetBool("isFloating",true);
         }
         else{
-            Debug.Log("animation is NOT floating");
+            //Debug.Log("animation is NOT floating");
             animator.SetBool("isFloating",false);
         }
     }
