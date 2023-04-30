@@ -69,7 +69,6 @@ public class Movement : MonoBehaviour
     }
 
     public bool isSliding(){
-        float horizontal = Input.GetAxisRaw("Horizontal");
         if(PlayerTouchingWall() && !isGrounded()){
             return true;
         }
@@ -194,8 +193,9 @@ public class Movement : MonoBehaviour
         }
         //if player is in the air they move slower
         else{
-            //Debug.Log("player moving in air");
-            rb.AddForce(new Vector2((horizontal) * 0.1f, 0f),ForceMode2D.Impulse);
+            if(velocity <=maxSpeed){
+                rb.AddForce(new Vector2((horizontal) * 0.3f, 0f),ForceMode2D.Impulse);
+            }
         }
     }
 
@@ -227,11 +227,23 @@ public class Movement : MonoBehaviour
     Vector2 position = slimeCollider.bounds.center;
     Vector2 size = slimeCollider.bounds.size;
     //Gizmos.DrawSphere(ceilingCheckOrigin.position,ceilingCheckRadius);
-    Gizmos.DrawSphere(wallCheckOrigin.position,wallCheckRadius);
     //Gizmos.DrawSphere(wallCheckOrigin.position,wallCheckRadius);
+    //Gizmos.DrawSphere(wallCheckOrigin.position,wallCheckRadius);
+    //Gizmos.DrawCube(position,size);
+    RaycastHit2D hit = Physics2D.BoxCast(position,size,0f,Vector2.down,1f,ground);
     Gizmos.DrawCube(position,size);
-    //RaycastHit2D hit = Physics2D.BoxCast(position,size,0f,Vector2.down, 1f,ground);
     }
 }
+
+ void OnCollisionEnter2D(Collision2D col)
+ {
+     if(LayerMask.LayerToName(col.gameObject.layer) == "Ground"){
+        Debug.Log("hit ground");
+        Debug.Log(ground);
+     }
+     else{
+        Debug.Log("not ground");
+     }
+ }
 
 }

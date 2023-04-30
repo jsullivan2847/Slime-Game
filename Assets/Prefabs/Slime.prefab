@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 4446591699993283471}
   - component: {fileID: 1137319904}
   - component: {fileID: 1137319911}
-  - component: {fileID: 1137319912}
+  - component: {fileID: 1137319901}
   m_Layer: 11
   m_Name: Slime
   m_TagString: Player
@@ -313,6 +313,7 @@ MonoBehaviour:
   GameManager: {fileID: 1137319904}
   slimeCollider: {fileID: 4855302684289879721}
   isFloating: 0
+  jumpSound: 0
   ground:
     serializedVersion: 2
     m_Bits: 320
@@ -332,6 +333,7 @@ MonoBehaviour:
   maxSpeed: 27
   wallCheckRadius: 2.4
   ceilingCheckRadius: 0.5
+  gizmos: 0
   Timer: {fileID: 1137319896}
 --- !u!114 &818065987275107899
 MonoBehaviour:
@@ -397,7 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   avgFrameRate: 0
   display_Text: {fileID: 0}
---- !u!114 &1137319912
+--- !u!114 &1137319901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,25 +408,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 8817433689562153750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 90d450e9bacde4029970f367b23419c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: ground
-  EventReference:
+  Movement: {fileID: 1435203297669729040}
+  jumpReference:
     Guid:
-      Data1: -1003696788
-      Data2: 1099900448
-      Data3: 1227559348
-      Data4: -364623375
-    Path: event:/Impact
-  Event: 
-  PlayEvent: 9
-  StopEvent: 6
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+      Data1: -527250788
+      Data2: 1083228212
+      Data3: -414334019
+      Data4: 422733737
+    Path: event:/Jump
+  landReference:
+    Guid:
+      Data1: -712247585
+      Data2: 1298046600
+      Data3: 937977264
+      Data4: -1131357191
+    Path: event:/Land

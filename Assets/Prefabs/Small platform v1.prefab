@@ -7,9 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2977066928422323316, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1990509
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977066928422323316, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977066928422323316, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.7211852
+      objectReference: {fileID: 0}
+    - target: {fileID: 3309565822817442570, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5839186219064341625, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
       propertyPath: m_Name
-      value: Ground (1)
+      value: Small platform v1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839186219064341625, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5839186219064341626, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
       propertyPath: m_RootOrder
@@ -17,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5839186219064341626, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.36131653
+      value: 0.3613165
       objectReference: {fileID: 0}
     - target: {fileID: 5839186219064341626, guid: da5c7de5f420e4b6d97d733812146cf8, type: 3}
       propertyPath: m_LocalPosition.x

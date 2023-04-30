@@ -33,9 +33,9 @@ public class Sound : MonoBehaviour
     }
     void LandSound(){
         if(Movement.isGrounded()){
-            Debug.Log("grounded");
+            //Debug.Log("grounded");
             if(!wasGrounded){
-                Debug.Log("just landed");
+                //Debug.Log("just landed");
                 landInstance = FMODUnity.RuntimeManager.CreateInstance(landReference);
                 landInstance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject.transform));
                 landInstance.start();
